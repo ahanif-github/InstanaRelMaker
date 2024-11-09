@@ -8,15 +8,15 @@ res=$(curl --location --request POST "https://ams-globelife.instana.io/api/relea
   --silent \
   --fail \
   --show-error \
-  --header "Authorization: apiToken ${INSTANA_TOKEN}" \
+  --header "Authorization: apiToken VQw6Xr_YS2C44vE2wjRWfA" \
   --header "Content-Type: application/json" \
   --user-agent "ahanif-github/InstnaRelMaker/${version:-dev}" \
   --data "{
-	\"name\": \"${1}\",
-	\"start\": $(date +%s)000,
+	\"name\": \"MyFirstGitHubRelease\",
+	\"start\": \"1731191180321\",
   	\"applications\": [
       {
-        \"name\": \"${INSTANA_APPLICATION}\" 
+        \"name\": \"TestAppNETDB\" 
       }
 }")
 
