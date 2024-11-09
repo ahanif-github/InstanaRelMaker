@@ -4,7 +4,7 @@ echo "Creating release $1"
 
 echo "${2}" > scope.json
 
-res=$(curl --location --request POST "${INSTANA_BASE}/api/releases" \
+res=$(curl --location --request POST "https://ams-globelife.instana.io/api/releases" \
   --silent \
   --fail \
   --show-error \
